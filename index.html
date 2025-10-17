@@ -20,6 +20,11 @@
             <button class="singin" onclick="location.href='./signin.html'">    
                 <b>Try free</b>
             </button>
+            <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </header>
 
@@ -99,7 +104,12 @@
             </div>
     </footer>
 
-    
+    <script>
+        function toggleMobileMenu() {
+            const nav = document.querySelector('.header_nav');
+            nav.classList.toggle('active');
+        }
+    </script>
     
 
 </body>
